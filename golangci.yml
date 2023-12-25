@@ -1,0 +1,19 @@
+run:
+  issues-exit-code: 0
+  tests: true
+
+linters-settings:
+  golint:
+    enable: true
+  govet:
+    enable: true
+  gofmt:
+    enable: true
+  deadcode:
+    enable: true
+  ineffassign:
+    enable: true
+  structcheck:
+    enable: true
+  unconvert:
+    enable: true

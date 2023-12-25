@@ -1,0 +1,229 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "chatgatewayapi.proto",
+    "version": "version not set"
+  },
+  "tags": [
+    {
+      "name": "ChatService"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/chat/get": {
+      "get": {
+        "operationId": "ChatService_GetChat",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/apiGetChatResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "frinedid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ChatService"
+        ]
+      }
+    },
+    "/chat/getmessages": {
+      "get": {
+        "operationId": "ChatService_GetMessages",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/apiGetMessagesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "chatid",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ChatService"
+        ]
+      }
+    },
+    "/chat/send": {
+      "post": {
+        "operationId": "ChatService_SendMessage",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/apiSendMessageResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/apiSendMessageRequest"
+            }
+          }
+        ],
+        "tags": [
+          "ChatService"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "apiCreateChatsResponse": {
+      "type": "object"
+    },
+    "apiGetAllChatsResponse": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "apiGetChatResponse": {
+      "type": "object",
+      "properties": {
+        "chatid": {
+          "type": "string"
+        },
+        "access_token": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        }
+      }
+    },
+    "apiGetMessagesResponse": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/apiMessage"
+          }
+        },
+        "access_token": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        }
+      }
+    },
+    "apiMessage": {
+      "type": "object",
+      "properties": {
+        "usr_id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "apiSendMessageRequest": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "chatid": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "chatid"
+      ]
+    },
+    "apiSendMessageResponse": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        }
+      }
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    }
+  }
+}

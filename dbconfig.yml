@@ -1,0 +1,11 @@
+docker:
+  dialect: postgres
+  datasource: dbname=chatdb user=postgres password=159753 sslmode=disable port=5557
+  dir: migrations
+  table: migrations
+
+local:
+  dialect: postgres
+  datasource: dbname=chatdb user=postgres password=159753 sslmode=disable port=5432
+  dir: migrations
+  table: migrations

@@ -1,0 +1,64 @@
+{"level":"info","msg":"запуск grpc сервера по адресу: :13995","time":"2023-11-21T13:21:37+04:00"}
+{"level":"info","msg":"запуск http сервера по адресу :13994","time":"2023-11-21T13:21:37+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetAllChats","time":"2023-11-21T13:22:21+04:00"}
+{"level":"error","msg":"Не получилось извлечь xRequestId из контекста","time":"2023-11-21T13:22:21+04:00"}
+{"level":"info","msg":"Получен сигнал выключения: terminated - Graceful shutdown выполнен","time":"2023-11-21T13:26:59+04:00"}
+{"level":"info","msg":"запуск grpc сервера по адресу: :13995","time":"2023-11-21T13:27:11+04:00"}
+{"level":"info","msg":"запуск http сервера по адресу :13994","time":"2023-11-21T13:27:11+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetAllChats","time":"2023-11-21T13:27:25+04:00"}
+{"level":"info","msg":"Получен сигнал выключения: terminated - Graceful shutdown выполнен","time":"2023-11-21T13:36:44+04:00"}
+{"level":"info","msg":"запуск grpc сервера по адресу: :13995","time":"2023-11-21T13:46:19+04:00"}
+{"level":"info","msg":"запуск http сервера по адресу :13994","time":"2023-11-21T13:46:19+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetAllChats","time":"2023-11-21T13:46:31+04:00"}
+{"level":"info","msg":"Получен сигнал выключения: terminated - Graceful shutdown выполнен","time":"2023-11-21T13:47:49+04:00"}
+{"level":"info","msg":"запуск grpc сервера по адресу: :13995","time":"2023-11-21T13:49:38+04:00"}
+{"level":"info","msg":"запуск http сервера по адресу :13994","time":"2023-11-21T13:49:38+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetAllChats","time":"2023-11-21T13:49:44+04:00"}
+{"level":"info","msg":"Получен сигнал выключения: terminated - Graceful shutdown выполнен","time":"2023-11-21T14:33:01+04:00"}
+{"level":"info","msg":"запуск http сервера по адресу :13994","time":"2023-11-23T14:03:21+04:00"}
+{"level":"info","msg":"запуск grpc сервера по адресу: :13995","time":"2023-11-23T14:03:21+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetAllChats","time":"2023-11-23T14:03:49+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/CreateChats","time":"2023-11-23T14:18:01+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/GetChat","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"a6ae557b-ab67-4745-a95c-cf792d9b1c69","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"a6ae557b-ab67-4745-a95c-cf792d9b1c69","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"Токен верный","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"Завершение jwt middleware","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"Запрос №  6198103f-f228-49d2-9911-4d9ffe84e463   a6ae557b-ab67-4745-a95c-cf792d9b1c69","time":"2023-11-23T14:18:53+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"a7add5d7-5c51-479f-96aa-c34a7df5a16d","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3MzgzNzgsInVzZXJfaWQiOiJhN2FkZDVkNy01YzUxLTQ3OWYtOTZhYS1jMzRhN2RmNWExNmQifQ.LDumPCnx8hr9oEDXZw_mTrFMLw5SBYN-vAiSvfQs_Hk","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"Запрос №  c8c5b7be-1884-4528-adf6-66d8706da16a   a7add5d7-5c51-479f-96aa-c34a7df5a16d","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"Запрос №  c8c5b7be-1884-4528-adf6-66d8706da16a   подключение к %s ws://localhost:13992/ws?id=f31bc6d3-8601-4580-b8f0-4ca4df12c96c","time":"2023-11-23T14:19:38+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"e640c66e-3b23-406b-bd51-721439175282","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3MzgzODMsInVzZXJfaWQiOiJlNjQwYzY2ZS0zYjIzLTQwNmItYmQ1MS03MjE0MzkxNzUyODIifQ.txd-QY2QHe-EL4L3QjUUZfgSTu0ffONPvGBm6CV59dI","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"Запрос №  0cd11688-2378-4c18-bab5-20cf2f688df9   e640c66e-3b23-406b-bd51-721439175282","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"Запрос №  0cd11688-2378-4c18-bab5-20cf2f688df9   подключение к %s ws://localhost:13992/ws?id=f31bc6d3-8601-4580-b8f0-4ca4df12c96c","time":"2023-11-23T14:19:43+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"a7add5d7-5c51-479f-96aa-c34a7df5a16d","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3Mzg0MTQsInVzZXJfaWQiOiJhN2FkZDVkNy01YzUxLTQ3OWYtOTZhYS1jMzRhN2RmNWExNmQifQ.g-764jB8QZGBX0n-PMxo5eE2dDEePOhNrz-u83x16fU","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"Запрос №  d173961e-1c60-48fe-8cab-89cb2e0428b6   a7add5d7-5c51-479f-96aa-c34a7df5a16d","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"Запрос №  d173961e-1c60-48fe-8cab-89cb2e0428b6   подключение к %s ws://localhost:13992/ws?id=f31bc6d3-8601-4580-b8f0-4ca4df12c96c","time":"2023-11-23T14:20:14+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"e640c66e-3b23-406b-bd51-721439175282","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3Mzg0MTYsInVzZXJfaWQiOiJlNjQwYzY2ZS0zYjIzLTQwNmItYmQ1MS03MjE0MzkxNzUyODIifQ.yD83y9XVKLX6Qv-DaewxsQY_R8-fJ6khVR-CWuYQ85k","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"Запрос №  bb997a58-0083-4b09-bfc2-ae7a7e99c059   e640c66e-3b23-406b-bd51-721439175282","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"Запрос №  bb997a58-0083-4b09-bfc2-ae7a7e99c059   подключение к %s ws://localhost:13992/ws?id=f31bc6d3-8601-4580-b8f0-4ca4df12c96c","time":"2023-11-23T14:20:16+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"b5e1049a-dae2-42a7-82f3-9537ef965612","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3Mzg0MzAsInVzZXJfaWQiOiJiNWUxMDQ5YS1kYWUyLTQyYTctODJmMy05NTM3ZWY5NjU2MTIifQ.3MnU-cThNoyYurRwIjGYju1qoT6fEtz_YPwII6Usrmo","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"Запрос №  c9d3406c-27b8-4f8a-91be-755b4908e913   b5e1049a-dae2-42a7-82f3-9537ef965612","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"Запрос №  c9d3406c-27b8-4f8a-91be-755b4908e913   подключение к %s ws://localhost:13992/ws?id=d17d75d9-52b4-49a1-9be8-51cbcc7f0d05","time":"2023-11-23T14:20:30+04:00"}
+{"level":"info","msg":"Использована прослойка jwt /api.ChatService/SendMessage","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"Access Токен неверный","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"38929e50-26ee-443e-ba88-a0bb5ec0705b","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"Новый access токен -  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA3Mzg0MzIsInVzZXJfaWQiOiIzODkyOWU1MC0yNmVlLTQ0M2UtYmE4OC1hMGJiNWVjMDcwNWIifQ.GtT8a8kBhHTzUlI6zPxNEW2j3bbt9nLVg2_6eYsggEY","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"Запрос №  6176510e-6b50-4c0a-b1f7-e888631c00c1   38929e50-26ee-443e-ba88-a0bb5ec0705b","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"Запрос №  6176510e-6b50-4c0a-b1f7-e888631c00c1   подключение к %s ws://localhost:13992/ws?id=d17d75d9-52b4-49a1-9be8-51cbcc7f0d05","time":"2023-11-23T14:20:32+04:00"}
+{"level":"info","msg":"Получен сигнал выключения: terminated - Graceful shutdown выполнен","time":"2023-11-23T14:39:16+04:00"}

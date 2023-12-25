@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "github.com/mamoru777/chatservice2/pkg/gateway-api";
+
+import "google/api/annotations.proto";
+import "google/api/field_behavior.proto";
+import "validate/validate.proto";
+import "google/protobuf/timestamp.proto";
+
+service ChatService {
+  rpc CreateChats(CreateChatsRequest) returns (CreateChatsResponse) {}
+  rpc SendMessage(SendMessageRequest) returns (SendMessageResponse) {
+    option (google.api.http) = {
+      post: "/chat/send"
+      body: "*"
+    };
+  }
+  rpc GetChat(GetChatRequest) returns (GetChatResponse) {
+    option (google.api.http) = {
+      get: "/chat/get"
+    };
+  }
+  rpc GetMessages(GetMessagesRequest) returns (GetMessagesResponse) {
+    option (google.api.http) = {
+      get: "/chat/getmessages"
+    };
+  }
+  rpc GetAllChats(GetAllChatsRequest) returns (GetAllChatsResponse){}
+}
+
+message CreateChatsRequest{
+  string userid = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message CreateChatsResponse{}
+
+message SendMessageRequest{
+  string text = 1 [(google.api.field_behavior) = REQUIRED];
+  string chatid = 2 [(google.api.field_behavior) = REQUIRED];
+}
+
+message SendMessageResponse{
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message GetChatRequest{
+  string frinedid = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message GetChatResponse{
+  string chatid = 1;
+  string access_token = 2;
+  string refresh_token = 3;
+}
+
+message GetMessagesRequest {
+  string chatid = 1;
+}
+
+message GetMessagesResponse {
+  repeated Message result = 1;
+  string access_token = 2;
+  string refresh_token = 3;
+}
+
+message Message {
+  string usr_id = 1;
+  string text = 2;
+  google.protobuf.Timestamp data = 3;
+}
+
+message GetAllChatsRequest {}
+
+message GetAllChatsResponse {
+  repeated string result =1;
+}

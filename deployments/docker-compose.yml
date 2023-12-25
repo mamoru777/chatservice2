@@ -1,0 +1,30 @@
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: DockerfileBd
+    environment:
+      POSTGRES_DB: "chatdb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "159753"
+    ports:
+    - "5557:5432"
+
+  filebeat:
+    build:
+      context: .
+      dockerfile: DockerfileFilebeat
+    container_name: filebeat_chat
+    volumes:
+      - ../logfile.log:/usr/share/filebeat/logfile.log
+    networks:
+      - elk-network
+networks:
+  elk-network:
+    driver: bridge
+    external: true
+
+
+
+
+

@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /usr/share/filebeat/*.log  # Замените на путь к вашим лог-файлам
+
+output.logstash:
+  hosts: ["elk:5044"]  # Замените на имя вашего Logstash-контейнера и порт
